@@ -18,7 +18,6 @@ This http-service is a dynamic generator of such proxy-auto-configuration featur
 
 - set proxy (ip) via HTTP ``GET`` arg `?ip=`
 - set proxy (port) via HTTP ``GET`` arg `?port=`
-- set proxy (config) via HTTP ``GET`` arg `?port=`
 - set domain config via HTTP ``GET`` arg `?conf=` (txt-file in `config/`)
 
 ## How it works
