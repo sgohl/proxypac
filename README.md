@@ -16,8 +16,8 @@ You may also want to serve different destination domains for different groups of
 
 This http-service is a dynamic generator of such proxy-auto-configuration featuring:
 
-- set proxy (ip) via HTTP ``GET`` arg `?ip=`
-- set proxy (port) via HTTP ``GET`` arg `?port=`
+- set proxy (ip) via HTTP ``GET`` arg `?ip=` -> (default `proxy`)
+- set proxy (port) via HTTP ``GET`` arg `?port=` -> (default `3128`)
 - set domain config via HTTP ``GET`` arg `?conf=` (txt-file in `config/`)
 
 ## How it works
