@@ -62,3 +62,12 @@ These variables can either be changed by building your own image or at container
 - PORT (default = `8080`)
 - DEFAULTCONFIG (default = `default` -> `/config/default.txt`)
 
+
+## Quick Start
+
+```
+docker run --pull=always --name proxypac --rm -p 8080:8080 ghcr.io/sgohl/proxypac:main
+```
+
+goto: http://localhost:8080/proxy.pac?ip=192.168.123.456
+
