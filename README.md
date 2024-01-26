@@ -53,7 +53,7 @@ The webserver used is https://github.com/msoap/shell2http
 which calls the `pac.sh` which generated this response while injecting the variables and the domain list (`var proxylist`) in a while-loop.
 
 
-## Environment variables (static/build/run-time)
+## Environment variables
 
 These variables can either be changed by building your own image or at container-start:
 
