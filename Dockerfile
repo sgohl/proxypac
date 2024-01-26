@@ -11,6 +11,6 @@ ENV PORT=8080
 
 ENV DEFAULTCONFIG=default
 
-ENTRYPOINT /app/shell2http -form -no-index -export-vars=CONFDIR -port ${PORT} \
+ENTRYPOINT /app/shell2http -form -no-index -export-vars=CONFDIR,DEFAULTCONFIG -port ${PORT} \
     /proxy.pac 'CONFIG=${v_conf} IP=${v_ip} PORT=${v_port} pac.sh'
 
