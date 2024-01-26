@@ -58,7 +58,7 @@ it calls the sh-script `pac.sh` that generates this response, while injecting th
 These variables can either be changed by building your own image or at container-start:
 
 - CONFDIR (default = `/config`)
-- PORT (default = `8080`)
+- PORT (for the webserver) (default = `8080`)
 - DEFAULTCONFIG (default = `default` -> `/config/default.txt`)
 - ROUTE (default `/`)
 
