@@ -10,7 +10,8 @@ RUN chmod -R +x /usr/local/bin
 ENV PORT=8080
 
 ENV DEFAULTCONFIG=default
+ENV ROUTE=/
 
 ENTRYPOINT /app/shell2http -form -no-index -export-vars=CONFDIR,DEFAULTCONFIG -port ${PORT} \
-    /proxy.pac 'CONFIG=${v_conf} IP=${v_ip} PORT=${v_port} pac.sh'
+    ${ROUTE} 'CONFIG=${v_conf} IP=${v_ip} PORT=${v_port} pac.sh'
 
