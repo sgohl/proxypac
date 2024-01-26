@@ -4,7 +4,7 @@ Proxy Auto Configuration Generator Service
 ## Background
 
 Usually, Browsers let you set a proxy with the possibility to **exclude** destination hosts by a list or pattern.
-Sometimes this is not enough and you actually want the opposite: Only use proxy for specific destination hosts.
+Sometimes this is not enough and you actually want the opposite: Only use proxy for **specific** destination hosts.
 
 For this purpose, browsers provide a way to set a *Automatic proxy configuration URL*
 
