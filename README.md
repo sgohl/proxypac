@@ -70,3 +70,15 @@ docker run --pull=always --name proxypac --rm -p 8080:8080 ghcr.io/sgohl/proxypa
 
 goto: http://localhost:8080/proxy.pac?ip=192.168.123.456
 
+
+## Fallback proxy via `/etc/hosts`
+
+In case the user does not set the HTTP `GET` arg `?ip=` 
+the service responds per default with `proxy`
+
+That way - if you prefer - you can set the IP of the `proxy` via `/etc/hosts` (or `c:\windows\system32\drivers\etc\hosts`) 
+
+```
+192.168.123.456 proxy
+```
+
