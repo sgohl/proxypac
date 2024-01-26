@@ -60,7 +60,7 @@ These variables can either be changed by building your own image or at container
 - CONFDIR (default = `/config`)
 - PORT (default = `8080`)
 - DEFAULTCONFIG (default = `default` -> `/config/default.txt`)
-
+- ROUTE (default `/`)
 
 ## Quick Start
 
@@ -68,7 +68,7 @@ These variables can either be changed by building your own image or at container
 docker run --pull=always --name proxypac --rm -p 8080:8080 ghcr.io/sgohl/proxypac:main
 ```
 
-goto: http://localhost:8080/proxy.pac?ip=192.168.123.456
+goto: http://localhost:8080/?ip=192.168.123.456
 
 
 ## Fallback proxy via `/etc/hosts`
