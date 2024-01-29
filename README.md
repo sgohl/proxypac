@@ -59,7 +59,7 @@ These variables can either be changed by building your own image or at container
 
 - CONFDIR (default = `/config`)
 - PORT (for the webserver) (default = `8080`)
-- DEFAULTCONFIG (default = `default` -> `/config/default.txt`)
+- DEFAULTCONFIG (default = `default` -> `${CONFDIR}/default.txt`)
 - ROUTE (default `/`)
 
 ## Quick Start
