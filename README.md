@@ -1,5 +1,5 @@
 # proxypac
-Proxy Auto Configuration Generator Service
+Proxy Auto Configuration Dynamic Generator Service
 
 ## Background
 
