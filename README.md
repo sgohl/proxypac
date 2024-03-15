@@ -67,8 +67,21 @@ These variables can either be changed by building your own image or at container
 ```
 docker run --pull=always --name proxypac --rm -p 8080:8080 ghcr.io/sgohl/proxypac:main
 ```
+or
 
-goto: http://localhost:8080/?ip=192.168.123.456
+```
+version: '3.7'
+services:
+  proxypac:
+    image: ghcr.io/sgohl/proxypac:main
+    environment:
+      PORT: "8080"              ## optional/default
+      ROUTE: "/"                ## optional/default
+      DEFAULTCONFIG: "default"  ## optional/default
+      CONFDIR: "/config"        ## if changed, you must mount your own host config folder or build your own image
+```
+
+test: http://localhost:8080/?ip=192.168.123.456
 
 
 ## Fallback proxy via `/etc/hosts`
