@@ -50,7 +50,7 @@ function FindProxyForURL( url, host )
 ```
 
 The webserver used in front of this service is https://github.com/msoap/shell2http  
-it calls the sh-script `pac.sh` that generates this response, while injecting the variables and the domain list (`var proxylist`) in a while-loop.
+it calls the script `pac.sh` that generates this response, while injecting the variables and the domain list (`var proxylist`) in a loop.
 
 
 ## Environment variables
