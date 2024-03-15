@@ -13,5 +13,5 @@ ENV DEFAULTCONFIG=default
 ENV ROUTE=/
 
 ENTRYPOINT /app/shell2http -form -no-index -export-vars=CONFDIR,DEFAULTCONFIG -port ${PORT} \
-    ${ROUTE} 'CONFIG=${v_conf} IP=${v_ip} PORT=${v_port} pac.sh'
+    ${ROUTE} 'CONF=${v_conf} IP=${v_ip} PORT=${v_port} pac.sh'
 
