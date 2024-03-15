@@ -67,7 +67,7 @@ These variables can either be changed by building your own image or at container
 ```
 docker run --pull=always --name proxypac --rm -p 8080:8080 ghcr.io/sgohl/proxypac:main
 ```
-or
+or `compose.yml`
 
 ```
 version: '3.7'
